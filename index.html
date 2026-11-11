@@ -1,17 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LegalTech und digitale Aktenanalyse im Strafrecht: Technische Kompendien zur Kanzleiautomatisierung, OCR-Pipelines, Blattzahlen-Referenzierung und berufsrechtliche KI-Compliance (§ 203 StGB).">
-  <meta name="author" content="Rechtsanwalt Thomas Koll, Fachanwalt für Strafrecht">
-  <meta name="robots" content="index, follow">
-  <title>LegalTech & Digitale Aktenanalyse im Strafrecht – Technische Kompendien</title>
-  
-  <link rel="canonical" href="https://legaltech-kanzlei.github.io/">
-
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="LegalTech und digitale Aktenanalyse im Strafrecht: Technische Kompendien zur Kanzleiautomatisierung, OCR-Pipelines, Blattzahlen-Referenzierung und berufsrechtliche KI-Compliance (§ 203 StGB)." name="description"/>
+<meta content="Rechtsanwalt Thomas Koll, Fachanwalt für Strafrecht" name="author"/>
+<meta content="index, follow" name="robots"/>
+<title>LegalTech &amp; Digitale Aktenanalyse im Strafrecht – Technische Kompendien</title>
+<link href="https://legaltech-kanzlei.github.io/" rel="canonical"/>
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
@@ -70,8 +69,7 @@
     ]
   }
   </script>
-
-  <style>
+<style>
     :root {
       --bg-primary: #0f172a;
       --bg-secondary: #1e293b;
@@ -307,215 +305,196 @@
   </style>
 </head>
 <body>
-
-  <header>
-    <div class="header-container">
-      <span class="badge">LegalTech Kompendium – Strafprozess &amp; Kanzleiautomation</span>
-      <h1>LegalTech &amp; Digitale Aktenanalyse im Strafrecht</h1>
-      <div class="lead-meta">
-        <span>Fachabhandlung von <strong>Rechtsanwalt Thomas Koll</strong></span>
-        <span>Fachanwalt für Strafrecht</span>
-        <span>Stand: 2026</span>
-      </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <article>
-      <section id="einleitung">
-        <h2>1. Paradigmenwechsel im Strafverfahren: Die Bewältigung digitaler Massendaten</h2>
-        <p>
+<header>
+<div class="header-container">
+<span class="badge">LegalTech Kompendium – Strafprozess &amp; Kanzleiautomation</span>
+<h1>LegalTech &amp; Digitale Aktenanalyse im Strafrecht</h1>
+<div class="lead-meta">
+<span>Fachabhandlung von <strong>Rechtsanwalt Thomas Koll</strong></span>
+<span>Fachanwalt für Strafrecht</span>
+<span>Stand: 2026</span>
+</div>
+<div style="margin-top: 1.5rem; padding: 1rem 1.25rem; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px;"><a href="rag-rechtsprechung-quellenbindung.html" style="color: #38bdf8; font-weight: 700; text-decoration: none;">Neues Modul: Deterministische Zitatvalidierung, Hybrid-Search &amp; RAG gegen KI-Halluzinationen im deutschen Recht →</a></div></div>
+</header>
+<div class="container">
+<article>
+<section id="einleitung">
+<h2>1. Paradigmenwechsel im Strafverfahren: Die Bewältigung digitaler Massendaten</h2>
+<p>
           Die flächendeckende Einführung der elektronischen Aktenführung in Strafsachen gemäß § 32f der Strafprozessordnung (StPO) sowie der kontinuierliche Anstieg digitaler Beweismittel haben den strafrechtlichen Verteidigungsalltag grundlegend transformiert. Standen Strafverteidigerinnen und Strafverteidiger früher vor physischen Stehordnern, so sehen sich Kanzleien heute in Umfangsverfahren – insbesondere in den Bereichen des Wirtschaftsstrafrechts, des Steuerstrafrechts, bei Organiserter Kriminalität sowie im materiellen Cybercrime – mit Datenvolumina im zweistelligen Terabyte-Bereich konfrontiert.
         </p>
-        <p>
+<p>
           Elektronische Ermittlungsakten werden von den Staatsanwaltschaften und Gerichten keineswegs in homogenen, standardisierten Datenbankformaten übermittelt. Die Praxis offenbart vielmehr eine Gemengelage aus teils minderwertig eingescannten Altdokumenten, uneinheitlich paginierten PDF-Containern ohne verwertbare Textschichten und unstrukturierten Massenanlagen. Hinzu treten gigantische Mengen extrahierter Rohdaten: Exporte mobiler Endgeräte, Überwachungsprotokolle der Telekommunikation gem. §§ 100a ff. StPO sowie kryptierte Messenger-Protokolle aus internationalen Ermittlungskomplexen.
         </p>
-        <p>
+<p>
           Ohne den gezielten Einsatz robuster Softwarewerkzeuge und moderner Datenarchitekturen gerät der verfassungsrechtlich garantierte Grundsatz der Waffengleichheit (Art. 3 Abs. 1 i. V. m. Art. 20 Abs. 3 GG) in Gefahr. Die systematische Erschließung solcher Aktenberge erfordert eine Kanzleiinfrastruktur, die weit über das herkömmliche Anwaltsprogramm hinausgeht. Detaillierte Architekturen und Best Practices für solche Kanzleisysteme analysiert das Fachportal <a href="https://legaltech.top/">LegalTech.top – Fachportal für Legal Tech, Kanzleiautomatisierung und KI im Recht</a>, das Entwickler und Kanzleien bei der Konzeption professioneller Legal-Data-Pipelines unterstützt.
         </p>
-      </section>
-
-      <section id="ocr-geometrie">
-        <h2>2. Hochpräzise OCR-Pipelines: Block- vs. Wort-Geometrie und Validierung</h2>
-        <p>
+</section>
+<section id="ocr-geometrie">
+<h2>2. Hochpräzise OCR-Pipelines: Block- vs. Wort-Geometrie und Validierung</h2>
+<p>
           Der erste und kritischste Schritt jeder automatisierten Dokumentenanalyse ist die optische Zeichenerkennung (Optical Character Recognition, OCR). In der strafrechtlichen Praxis führt die herkömmliche, rein zeichenbasierte OCR regelmäßig zu fatalen Informationsverlusten. Behördliche Scan-Vorlagen weisen häufig schräge Einzüge, Durchschläge, Stempelaufdrucke, manuelle Paraphen und mehrspaltige Layouts auf.
         </p>
-        
-        <h3>2.1 Geometrie-Extraktion und Layout-Parsing</h3>
-        <p>
+<h3>2.1 Geometrie-Extraktion und Layout-Parsing</h3>
+<p>
           Eine industrielle juristische OCR-Pipeline darf nicht lediglich flachen Fließtext erzeugen. Erforderlich ist die Erfassung zweidimensionaler Koordinatenvektoren auf Seitenebene:
         </p>
-        <ul>
-          <li><strong>Wort-Ebene (Bounding Boxes):</strong> Jedes erkannte Token muss mit seinen absoluten Koordinaten (x0, y0, x1, y1) sowie einem statistischen Konfidenzwert (Confidence Score) im JSON-Format serialisiert werden. Dies ist unabdingbar für spätere optische Hervorhebungen im Original-Schriftsatz.</li>
-          <li><strong>Block- und Zeilen-Geometrie:</strong> Durch Clustering von Bounding Boxes anhand horizontaler und vertikaler Schwellenwerte müssen Absätze, Spaltenstrukturen und Tabellen rekonstruiert werden. Verfehlt ein Parser diese Segmentierung, vermischen sich zweispaltige Vernehmungsprotokolle zu einem unlesbaren, semantisch unbrauchbaren Textstrom.</li>
-        </ul>
-
-        <h3>2.2 PDF/A-Textlayer-Injektion</h3>
-        <p>
+<ul>
+<li><strong>Wort-Ebene (Bounding Boxes):</strong> Jedes erkannte Token muss mit seinen absoluten Koordinaten (x0, y0, x1, y1) sowie einem statistischen Konfidenzwert (Confidence Score) im JSON-Format serialisiert werden. Dies ist unabdingbar für spätere optische Hervorhebungen im Original-Schriftsatz.</li>
+<li><strong>Block- und Zeilen-Geometrie:</strong> Durch Clustering von Bounding Boxes anhand horizontaler und vertikaler Schwellenwerte müssen Absätze, Spaltenstrukturen und Tabellen rekonstruiert werden. Verfehlt ein Parser diese Segmentierung, vermischen sich zweispaltige Vernehmungsprotokolle zu einem unlesbaren, semantisch unbrauchbaren Textstrom.</li>
+</ul>
+<h3>2.2 PDF/A-Textlayer-Injektion</h3>
+<p>
           Nach der optischen Zeichenerkennung und Fehlerkorrektur (z. B. Behebung typischer OCR-Fehler bei Zahlen und Aktenzeichen) muss der Textlayer verlustfrei in das Ausgangsdokument reinjiziert werden. Hierbei hat sich der Standard PDF/A-1b bzw. PDF/A-2u etabliert. Der injizierte Textlayer muss deckungsgleich hinter den Pixeln des gescannten Bildes liegen. Nur so bleibt das Originaldokument gerichtsverwertbar erhalten, während gleichzeitig eine Volltextsuche und algorithmische Extraktion ermöglicht wird.
         </p>
-
-        <div class="info-box">
-          <p>
-            <strong>Wichtig für die Validierung:</strong> Die Zuverlässigkeit des Textlayers muss vor nachgelagerten Verarbeitungsschritten automatisch geprüft werden. Liegt der mittlere Konfidenzwert unterhalb eines Schwellenwerts von 85 %, oder weicht das Zeichen-zu-Flächen-Verhältnis drastisch ab, muss das Dokument automatisch in eine manuelle Prüfschleife oder an eine spezialisierte OCR-Engine für Schwerlesbares weitergeleitet werden.
+<div class="info-box">
+<p>
+<strong>Wichtig für die Validierung:</strong> Die Zuverlässigkeit des Textlayers muss vor nachgelagerten Verarbeitungsschritten automatisch geprüft werden. Liegt der mittlere Konfidenzwert unterhalb eines Schwellenwerts von 85 %, oder weicht das Zeichen-zu-Flächen-Verhältnis drastisch ab, muss das Dokument automatisch in eine manuelle Prüfschleife oder an eine spezialisierte OCR-Engine für Schwerlesbares weitergeleitet werden.
           </p>
-        </div>
-      </section>
-
-      <section id="halluzinationsvermeidung">
-        <h2>3. Blattzahlen-Referenzierung und strikte Halluzinationsvermeidung</h2>
-        <p>
+</div>
+</section>
+<section id="halluzinationsvermeidung">
+<h2>3. Blattzahlen-Referenzierung und strikte Halluzinationsvermeidung</h2>
+<p>
           Die größte Gefahr beim Einsatz generativer Sprachmodelle (Large Language Models, LLMs) im Strafprozess besteht in sogenannten Halluzinationen – also der plausibel formulierten, jedoch faktisch falschen Erfindung von Beweisergebnissen, Daten oder Zitaten. Im Strafrecht, wo es um die persönliche Freiheit von Mandanten und existenzielle Strafdrohungen geht, ist jede ungeprüfte Behauptung inakzeptabel.
         </p>
-        <p>
+<p>
           Die Lösung liegt in einer deterministischen Architektur, die auf strengem Retrieval-Augmented Generation (RAG) mit zwingender Quellenbindung basiert.
         </p>
-
-        <h3>3.1 Automatisierte Paginierungs- und Blattzahlen-Erkennung</h3>
-        <p>
+<h3>3.1 Automatisierte Paginierungs- und Blattzahlen-Erkennung</h3>
+<p>
           Strafakten sind in Bände unterteilt und durchgehend paginiert (z. B. „Bl. 142 d. A.“ bzw. „Band III, Bl. 78“). Eine praxistaugliche Software muss mittels regulärer Ausdrücke (RegEx) und visueller Heuristiken Kopf- und Fußzeilen gezielt nach Paginierungsstempeln absuchen. Jeder Text-Chunk, der in eine Vektordatenbank oder einen semantischen Index überführt wird, muss zwingend mit den exakten Metadaten verknüpft sein:
         </p>
-        <ul>
-          <li>Bandnummer und Sonderbandbezeichnung (z. B. „Sonderband Telefonüberwachung IV“)</li>
-          <li>Offizielle Blattzahl (inklusive Kennzeichnungen wie „Bl. 114 R“ für die Rückseite)</li>
-          <li>Eindeutiger SHA-256-Hash des Ausgangsdokuments</li>
-          <li>Exakte Koordinaten des Textsegments auf der Seite</li>
-        </ul>
-
-        <h3>3.2 Quellenbindung und Assertion-Layer</h3>
-        <p>
+<ul>
+<li>Bandnummer und Sonderbandbezeichnung (z. B. „Sonderband Telefonüberwachung IV“)</li>
+<li>Offizielle Blattzahl (inklusive Kennzeichnungen wie „Bl. 114 R“ für die Rückseite)</li>
+<li>Eindeutiger SHA-256-Hash des Ausgangsdokuments</li>
+<li>Exakte Koordinaten des Textsegments auf der Seite</li>
+</ul>
+<h3>3.2 Quellenbindung und Assertion-Layer</h3>
+<p>
           Erzeugt das Assistenzsystem eine chronologische Zusammenfassung oder eine Gegenüberstellung von Zeugenaussagen, erzwingt ein nachgelagerter Assertion-Layer (Grounding-Filter), dass jede getroffene Tatsachenbehauptung ein valides Zitat mit überprüfbarer Blattzahl enthält. Behauptungen ohne exakten Aktenbeleg werden vom System unmittelbar verworfen oder als ungesichert markiert. Kanzleien, die eigene KI-Pipelines aufsetzen, finden auf <a href="https://legaltech.top/">LegalTech.top</a> praxiserprobte Konzepte für die Implementierung solcher deterministischer Guardrails.
         </p>
-      </section>
-
-      <section id="beweismittel-tkue">
-        <h2>4. Kommunikationsauswertung: TKÜ, Messenger-Exporte und Cybercrime-Daten</h2>
-        <p>
+</section>
+<section id="beweismittel-tkue">
+<h2>4. Kommunikationsauswertung: TKÜ, Messenger-Exporte und Cybercrime-Daten</h2>
+<p>
           Ein erheblicher Anteil des Beweismaterials in modernen Strafverfahren entstammt operativen Überwachungsmaßnahmen. Dies betrifft einerseits Maßnahmen der Telekommunikationsüberwachung nach §§ 100a, 100b StPO, andererseits die Sicherstellung digitaler Speichermedien im Rahmen von Durchsuchungen nach §§ 102, 110 StPO.
         </p>
-        <p>
+<p>
           Verfahrensdaten liegen hierbei in extrem heterogenen Formaten vor: CSV-Tabellen von Providern, Audio-Mitschnitte von Telefonaten, unübersichtliche PDF-Drucke behördlicher Auswertetools (wie Cellebrite UFED oder Magnet AXIOM) sowie JSON-/SQL-Dumps beschlagnahmter Chat-Verläufe.
         </p>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Beweismittelart</th>
-                <th>Typisches Datenformat</th>
-                <th>Automatisierte Pipeline &amp; Analyse</th>
-                <th>Strafprozessuale Angriffspunkte</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>TKÜ (§ 100a StPO)</td>
-                <td>WAV / MP3 / CSV</td>
-                <td>Automatisierte Transkription (Whisper On-Prem), Sprechertrennung (Diarization), Metadaten-Korrelation</td>
-                <td>Prüfung der Anordnungsvoraussetzungen, Katalogtat-Relevanz, Kernbereichsschutz (§ 100d StPO)</td>
-              </tr>
-              <tr>
-                <td>Messenger-Chats</td>
-                <td>JSON / SQLite / HTML</td>
-                <td>Normalisierung in einheitliche Chat-Timelines, Kontakthierarchien, Sentiment- und Keyword-Filterung</td>
-                <td>Vollständigkeit des Exports, Manipulationssicherheit, Kontextauflösung gelöschter Nachrichten</td>
-              </tr>
-              <tr>
-                <td>Server-Logs &amp; Forensik</td>
-                <td>PCAP / Syslog / EVTX</td>
-                <td>Automatisierte IP-Auflösung, Zeitzonen-Harmonisierung (UTC vs. Local Time), Event-Korrelation</td>
-                <td>Beweiswert von IP-Adressen, dynamische Zuweisungen, Angriffsszenarien Dritter</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Beweismittelart</th>
+<th>Typisches Datenformat</th>
+<th>Automatisierte Pipeline &amp; Analyse</th>
+<th>Strafprozessuale Angriffspunkte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TKÜ (§ 100a StPO)</td>
+<td>WAV / MP3 / CSV</td>
+<td>Automatisierte Transkription (Whisper On-Prem), Sprechertrennung (Diarization), Metadaten-Korrelation</td>
+<td>Prüfung der Anordnungsvoraussetzungen, Katalogtat-Relevanz, Kernbereichsschutz (§ 100d StPO)</td>
+</tr>
+<tr>
+<td>Messenger-Chats</td>
+<td>JSON / SQLite / HTML</td>
+<td>Normalisierung in einheitliche Chat-Timelines, Kontakthierarchien, Sentiment- und Keyword-Filterung</td>
+<td>Vollständigkeit des Exports, Manipulationssicherheit, Kontextauflösung gelöschter Nachrichten</td>
+</tr>
+<tr>
+<td>Server-Logs &amp; Forensik</td>
+<td>PCAP / Syslog / EVTX</td>
+<td>Automatisierte IP-Auflösung, Zeitzonen-Harmonisierung (UTC vs. Local Time), Event-Korrelation</td>
+<td>Beweiswert von IP-Adressen, dynamische Zuweisungen, Angriffsszenarien Dritter</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
           Besonders in komplexen Umfangsverfahren erfordert die sachgerechte Bewältigung digitaler Beweismittel moderne E-Discovery-Pipelines und strukturierte Auswertungsverfahren. Fundierte Analysen zu automatisierten Workflows, Daten-Pipelines und digitaler forensischer Aktenerschließung bietet LegalTech.top – E-Discovery &amp; Massendaten in Ermittlungsverfahren, wo spezifische Verfahren zur Durchsuchung und Auswertung von Großdatenmengen beleuchtet werden.
         </p>
-      </section>
-
-      <section id="berufsrecht-compliance">
-        <h2>5. Berufsrechtliche und datenschutzrechtliche Leitplanken: § 203 StGB &amp; § 43e BRAO</h2>
-        <p>
+</section>
+<section id="berufsrecht-compliance">
+<h2>5. Berufsrechtliche und datenschutzrechtliche Leitplanken: § 203 StGB &amp; § 43e BRAO</h2>
+<p>
           Der Einsatz fortschrittlicher Technologien in der Strafverteidigung unterliegt strengsten berufsrechtlichen und strafrechtlichen Schranken. Das Vertrauensverhältnis zwischen Verteidiger und Mandant ist durch das Berufsgeheimnis (§ 203 Abs. 1 Nr. 3 StGB) sowie das anwaltliche Zeugnisverweigerungsrecht (§ 53 Abs. 1 Nr. 2 StPO) und das Beschlagnahmeverbot (§ 97 StPO) geschützt.
         </p>
-
-        <h3>5.1 Die Anforderungen des § 43e BRAO</h3>
-        <p>
+<h3>5.1 Die Anforderungen des § 43e BRAO</h3>
+<p>
           Gemäß § 43e der Bundesrechtsanwaltsordnung (BRAO) dürfen Rechtsanwältinnen und Rechtsanwälte Dienstleister nur dann mit der Verarbeitung von Mandantendaten betrauen, wenn diese zur Verschwiegenheit verpflichtet werden und angemessene technische und organisatorische Maßnahmen (TOM) zum Schutz der Daten getroffen sind. Die unbedachte Übermittlung ungeschwärzter Ermittlungsakten an US-amerikanische Public-Cloud-Dienste ohne spezifische vertragliche Vereinbarungen stellt ein massives berufsrechtliches und strafrechtliches Risiko dar.
         </p>
-
-        <h3>5.2 Technische Architektur: On-Premises &amp; Zero Data Retention</h3>
-        <p>
+<h3>5.2 Technische Architektur: On-Premises &amp; Zero Data Retention</h3>
+<p>
           Für Kanzleien, die moderne Sprachmodelle und Parsing-Pipelines betreiben, ergeben sich daraus zwingende technische Vorgaben:
         </p>
-        <ol>
-          <li><strong>Lokale Inferenz (On-Premises):</strong> Der sicherste Weg ist der Betrieb von Open-Weight-Modellen (z. B. Llama 3, Mistral, Qwen) auf kanzleiinternen GPU-Servern (z. B. NVIDIA RTX 4090 oder A-Serie) innerhalb des Kanzleinetzwerks. Es fließen keinerlei Daten über externe Schnittstellen ab.</li>
-          <li><strong>Zero-Data-Retention-Agreements:</strong> Werden externe Hyperscaler-APIs genutzt, dürfen ausschließlich dedizierte Enterprise-Instanzen mit vertraglich garantierter Zero Data Retention (ZDR), Sitz im EU-Rechtsraum und vollständigem Ausschluss jeglicher Modellweiterschulung mit Mandantendaten genutzt werden.</li>
-          <li><strong>Vollständige Ende-zu-Ende-Verschlüsselung:</strong> Alle Vektorindizes, Rohakten und Transkripte müssen im Ruhezustand (Data at Rest) mittels AES-256 verschlüsselt sein. Der Zugriff darf nur über rollenbasierte Autorisierungskonzepte mit Mehrfaktor-Authentifizierung erfolgen.</li>
-        </ol>
-      </section>
-
-      <section id="ressourcen">
-        <h2>6. Fazit und weiterführende Fachressourcen</h2>
-        <p>
+<ol>
+<li><strong>Lokale Inferenz (On-Premises):</strong> Der sicherste Weg ist der Betrieb von Open-Weight-Modellen (z. B. Llama 3, Mistral, Qwen) auf kanzleiinternen GPU-Servern (z. B. NVIDIA RTX 4090 oder A-Serie) innerhalb des Kanzleinetzwerks. Es fließen keinerlei Daten über externe Schnittstellen ab.</li>
+<li><strong>Zero-Data-Retention-Agreements:</strong> Werden externe Hyperscaler-APIs genutzt, dürfen ausschließlich dedizierte Enterprise-Instanzen mit vertraglich garantierter Zero Data Retention (ZDR), Sitz im EU-Rechtsraum und vollständigem Ausschluss jeglicher Modellweiterschulung mit Mandantendaten genutzt werden.</li>
+<li><strong>Vollständige Ende-zu-Ende-Verschlüsselung:</strong> Alle Vektorindizes, Rohakten und Transkripte müssen im Ruhezustand (Data at Rest) mittels AES-256 verschlüsselt sein. Der Zugriff darf nur über rollenbasierte Autorisierungskonzepte mit Mehrfaktor-Authentifizierung erfolgen.</li>
+</ol>
+</section>
+<section id="ressourcen">
+<h2>6. Fazit und weiterführende Fachressourcen</h2>
+<p>
           Die Kanzleiautomatisierung im Strafrecht ist kein Zukunftsszenario, sondern elementare Notwendigkeit zur Wahrung der Effektivität der Strafverteidigung. Kanzleien, die über optimierte OCR-Pipelines, strukturierte Metadaten-Extraktion und compliance-konforme Analysewerkzeuge verfügen, können komplexe Wirtschaftsstrafverfahren schneller, präziser und kosteneffizienter führen.
         </p>
-        
-        <div class="resource-card">
-          <h3>Empfohlene Fachportale und Referenzen</h3>
-          <p>
+<div class="resource-card">
+<h3>Empfohlene Fachportale und Referenzen</h3>
+<p>
             Vertiefende Fachinformationen zur technischen Umsetzung, zu Software-Frameworks und zur Kanzleidigitalisierung:
           </p>
-          <ul>
-            <li>
+<ul>
+<li>
               LegalTech.top – Das umfassende Fachportal für Legal Tech, Kanzleiautomatisierung, intelligente Prompt-Architekturen und sichere KI-Integration im anwaltlichen Berufsalltag.
             </li>
-            <li>
+<li>
               LegalTech.top – OCR-Pipelines &amp; Durchsuchbare Akten – Technische Implementierungsleitfäden zur automatisierten Paginierung, Bounding-Box-Erkennung und verlustfreien PDF/A-Konvertierung für Großverfahren.
             </li>
-          </ul>
-        </div>
-      </section>
-    </article>
-  </div>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Impressum (§ 5 DDG)</h4>
-          <p>
-            <strong>Rechtsanwalt Thomas Koll</strong><br>
-            Fachanwalt für Strafrecht<br>
-            Kanzlei Koll &amp; Tamrzadeh Rechtsanwälte<br>
-            Oppenhoffallee 3–5<br>
-            52066 Aachen<br>
-            Telefon: 0241 / 9437950<br>
+</ul>
+</div>
+</section>
+</article>
+</div>
+<footer>
+<div class="footer-container">
+<div class="footer-grid">
+<div class="footer-col">
+<h4>Impressum (§ 5 DDG)</h4>
+<p>
+<strong>Rechtsanwalt Thomas Koll</strong><br/>
+            Fachanwalt für Strafrecht<br/>
+            Kanzlei Koll &amp; Tamrzadeh Rechtsanwälte<br/>
+            Oppenhoffallee 3–5<br/>
+            52066 Aachen<br/>
+            Telefon: 0241 / 9437950<br/>
             E-Mail: <a href="mailto:redaktion@legaltech.top">redaktion@legaltech.top</a> / <a href="mailto:koll@koll-tamrzadeh.de">koll@koll-tamrzadeh.de</a>
-          </p>
-          <p style="margin-top: 0.5rem; font-size: 0.85rem;">
-            Zuständige Kammer: Rechtsanwaltskammer Köln, Riehler Straße 30, 50668 Köln.<br>
-            Gesetzliche Berufsbezeichnung: Rechtsanwalt (verliehen in der Bundesrepublik Deutschland).<br>
+</p>
+<p style="margin-top: 0.5rem; font-size: 0.85rem;">
+            Zuständige Kammer: Rechtsanwaltskammer Köln, Riehler Straße 30, 50668 Köln.<br/>
+            Gesetzliche Berufsbezeichnung: Rechtsanwalt (verliehen in der Bundesrepublik Deutschland).<br/>
             Berufsrechtliche Regelungen: BRAO, BORA, FAO, RVG (abrufbar unter www.brak.de).
           </p>
-        </div>
-        <div class="footer-col">
-          <h4>Fachgebiete</h4>
-          <p>
-            Strafverteidigung &amp; Revision<br>
-            Wirtschafts- und Steuerstrafrecht<br>
-            IT-Strafrecht &amp; Digitale Forensik<br>
+</div>
+<div class="footer-col">
+<h4>Fachgebiete</h4>
+<p>
+            Strafverteidigung &amp; Revision<br/>
+            Wirtschafts- und Steuerstrafrecht<br/>
+            IT-Strafrecht &amp; Digitale Forensik<br/>
             LegalTech-Entwicklung &amp; Kanzleiautomation
           </p>
-        </div>
+</div>
+</div>
+<div class="footer-bottom">
+        © 2026 Kanzlei Koll &amp; Tamrzadeh Rechtsanwälte, Aachen. Alle Rechte vorbehalten.
       </div>
-      <div class="footer-bottom">
-        &copy; 2026 Kanzlei Koll &amp; Tamrzadeh Rechtsanwälte, Aachen. Alle Rechte vorbehalten.
-      </div>
-    </div>
-  </footer>
-
+</div>
+</footer>
 </body>
 </html>
